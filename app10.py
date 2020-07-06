@@ -4,4 +4,3 @@ for number in numbers:
     if number > greatest:
         greatest = number
 print(greatest)
-#oas
