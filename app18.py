@@ -1,3 +1,3 @@
-for number in range(0, 100):
-    if number % 2 == 0:
+for number in range(0, 101):
+    if number % 5 == 0:
         print(number, end=' ')
