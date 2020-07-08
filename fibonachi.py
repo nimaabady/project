@@ -1,17 +1,16 @@
-def fibonachi():
-    print('fibonachi is called: ')
-    n1 = 1
-    n2 = 1
-    print(n1, end=' ')
-    print(n2, end=' ')
-    counter = 0
-    while counter < 10:
-        counter += 1
-        print(n1 + n2, end=' ')
-        temp = n1
-        n1 = n2
-        n2 = temp + n2
+def fibonacci(n):
+    if n < 0:
+        print("Incorrect input")
+    # First Fibonacci number is 0
+    elif n == 1:
+        return 0
+    # Second Fibonacci number is 1
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+    # Driver Program
 
 
-# Main
-fibonachi()
+print(fibonacci(9))
